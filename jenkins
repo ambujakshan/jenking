@@ -5,7 +5,10 @@ pipeline
     tools{
         maven "mymaven"
     }
-    agent any
+    agent
+{
+label 'linux_node'
+}
     
     stages
     {
